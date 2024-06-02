@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            position: relative;
+            transition: transform 0.3s ease;
+            text-align: center; /* Center align the content */
+        }
+        .container:hover {
+            transform: scale(1.05);
+        }
+        h2 {
+            color: #333333;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            margin: 15px 0;
+            line-height: 1.6;
+            text-align: left;
+        }
+        img {
+            width: 40px; /* Increased size */
+            height: 40px; /* Increased size */
+            vertical-align: middle;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        .tooth-img {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+        }
+        .top-left {
+            top: 0;
+            left: 0;
+        }
+        .top-right {
+            top: 0;
+            right: 0;
+        }
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+        }
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+        }
+        .logo {
+            width: 120px; /* Larger size */
+            height: 120px; /* Larger size */
+            margin: 0 auto; /* Center align */
+            display: block; /* Ensure it's centered */
+            border-radius: 50%; /* Make it circular */
+            border: 2px solid #007bff; /* Add border */
+            transition: transform 0.3s ease;
+        }
+        .logo:hover {
+            transform: scale(1.1);
+        }
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+        /* Styling for Instagram and Facebook icons */
+        .social-icons img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 15px;
+            transition: transform 0.3s ease;
+        }
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <img src="Tooth.jpg" alt="Tooth" class="tooth-img top-left">
+    <img src="Tooth.jpg" alt="Tooth" class="tooth-img top-right">
+    <img src="Tooth.jpg" alt="Tooth" class="tooth-img bottom-left">
+    <img src="Tooth.jpg" alt="Tooth" class="tooth-img bottom-right">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p><img src="call.jpg"> Phone number</p>
+        <p><img src="whatsapp.png"> <a href="https://wa.me/whatsappnumber" target="_blank">Whatsapp link</a></p>
+        <p><img src="clock.png"> Saturday - Thursday: 9 A.M - 10 P.M<br> Friday: Closed</p>
+        <p><img src="location.jpg"> <a href="https://maps.google.com/?q=Park+Dental+Center,+22A+St+-+Al+Safa+-+Al+Safa+1+-+Dubai" target="_blank">Park Dental Center, 22A St - Al Safa - Al Safa 1 - Dubai</a></p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/parkdental_dxb/" target="_blank"><img src="insta.jpg" alt="Instagram" /></a>
+            <a href="https://www.facebook.com/p/Park-Dental-Center-100064929415442/" target="_blank"><img src="face.png" alt="Facebook" /></a>
+        </div>
+    </div>
+</body>
+</html>

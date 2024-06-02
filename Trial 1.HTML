@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for the navigation links */
+        .navigation-links {
+            margin-top: 20px;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navigation-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navigation-links ul li {
+            margin-right: 20px;
+        }
+
+        .navigation-links ul li:last-child {
+            margin-right: 0;
+        }
+
+        .navigation-links ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            background: linear-gradient(to right, #4CAF50, #2E8B57);
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+
+        .navigation-links ul li a:hover {
+            background: linear-gradient(to right, #2E8B57, #4CAF50);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="left">
+                <b>
+                <img src="phone.jpg" alt="Call us">
+                <div class="call-info">
+                    <p>Call us</p><br>
+                    <p class="phone-number">Your Phone Number Here</p></b>
+                </div>
+            </div>
+            <div class="center">
+                <img src="Park.jpg" alt="Logo" class="main-logo">
+            </div>
+            <div class="right">
+                <img src="clock.png" alt="Working Hours">
+                <div class="time-info">
+                    <b>
+                    <p>Saturday - Thursday: 10 A.M - 9 P.M</p><br>
+                   <div class="left"> <p>Friday: Closed</p></div> 
+                </div></b>
+            </div>
+        </div>
+        <hr>
+        <div class="navigation-links">
+            <ul>
+                <li><a href="About.HTML" target="main_frame">About us</a></li>
+                <li><a href="Meet.html" target="main_frame">Meet Our Team</a></li>
+                <li><a href="Services.html" target="main_frame">Services</a></li>
+                <li><a href="Gallery.html" target="main_frame">Gallery</a></li>
+                <li><a href="Blog.html" target="main_frame">Blog</a></li>
+                <li><a href="Contact.Html" target="main_frame">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>

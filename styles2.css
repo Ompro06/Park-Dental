@@ -1,0 +1,9 @@
+body {
+    background-image: url('Park.jpg'); /* URL of your watermark image */
+    background-repeat: repeat;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+
+.content {
+    /* Add styles to your content container */
+}

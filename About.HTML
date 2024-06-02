@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        body::before {
+            content: '';
+            background-image: url('Park.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10vw; /* Adjust size as needed */
+            height: 10vh; /* Adjust size as needed */
+            z-index: -1;
+            opacity: 0.5; /* Increase opacity for visibility */
+            transition: opacity 0.5s ease; /* Add transition for smoothness */
+        }
+
+        .corner-watermark {
+            position: absolute;
+            width: 6%; /* Adjust size as needed */
+            height: auto;
+            opacity: 0.8; /* Initial opacity */
+            transition: opacity 0.5s ease, transform 0.3s ease; /* Add transitions for smoothness */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+        }
+
+        .corner-watermark:hover {
+            opacity: 1; /* Increase opacity on hover */
+            transform: scale(1.05); /* Increase size on hover */
+        }
+
+        .top-left {
+            top: 20px; /* Adjust distance from top */
+            left: 20px; /* Adjust distance from left */
+        }
+
+        .top-right {
+            top: 20px; /* Adjust distance from top */
+            right: 20px; /* Adjust distance from right */
+        }
+
+        .bottom-left {
+            bottom: 20px; /* Adjust distance from bottom */
+            left: 20px; /* Adjust distance from left */
+        }
+
+        .bottom-right {
+            bottom: 20px; /* Adjust distance from bottom */
+            right: 20px; /* Adjust distance from right */
+        }
+
+        .content {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            position: relative;
+            z-index: 1;
+            transition: transform 0.3s ease; /* Add transition for smoothness */
+        }
+
+        .content:hover {
+            transform: scale(1.05); /* Increase scale on hover */
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+
+        .highlight {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <img src="Tooth.jpg" alt="Tooth Watermark" class="corner-watermark top-left">
+    <img src="Tooth.jpg" alt="Tooth Watermark" class="corner-watermark top-right">
+    <img src="Tooth.jpg" alt="Tooth Watermark" class="corner-watermark bottom-left">
+    <img src="Tooth.jpg" alt="Tooth Watermark" class="corner-watermark bottom-right">
+    
+    <div class="content">
+        <h1>About Us</h1>
+        <p>Park Dental Center in <span class="highlight">Dubai</span> is a full service dental center providing unparalleled dental solutions to the city residents.</p>
+    </div>
+</body>
+</html>
